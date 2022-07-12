@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "description": "Terror 222"
+    },
+    {
+      "id": 3,
+      "description": "Ação"
+    },
+    {
+      "id": 11,
+      "description": "Drama"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Harry Potter e a Pedra Filosofal",
+      "categoryId": 3,
+      "genreId": 1
+    },
+    {
+      "id": 2,
+      "name": "Novo Filme",
+      "categoryId": 11,
+      "genreId": 1
+    },
+    {
+      "id": 3
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "JK Rowlling"
+    },
+    {
+      "name": "Stephen King",
+      "id": 2
+    },
+    {
+      "name": "Machado de Assis",
+      "id": 3
+    }
+  ]
+}
