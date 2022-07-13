@@ -30,7 +30,14 @@ export default {
       <tr v-for="(row, i) of items" :key="i">
         <!-- <td v-for="(data, i) of row" :key="i">{{ data }}</td> -->
         <td v-for="column of columns" :key="column.field">
-          {{ row[column.field] }}
+          <span v-if="column.href">
+            <a :href="row[column.field]" target="_blank">
+              {{ row[column.field] }}</a
+            >
+          </span>
+          <span v-else>
+            {{ row[column.field] }}
+          </span>
         </td>
         <td>
           <button @click="$emit('edit', row)">Update</button>
@@ -42,6 +49,9 @@ export default {
 </template>
 
 <style scoped>
+a {
+  color: inherit;
+}
 .data-table {
   border-collapse: separate;
   border-spacing: 2px;

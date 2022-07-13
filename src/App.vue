@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterLink to="/produtos"> Livros</RouterLink> |
     <RouterLink to="/login"> Login</RouterLink> |
     <RouterLink to="/autores"> Autor</RouterLink> |
-    <RouterLink to="/login"> Editora</RouterLink> 
+    <RouterLink to="/editoras"> Editora</RouterLink>
   </header>
   <main>
     <RouterView />
