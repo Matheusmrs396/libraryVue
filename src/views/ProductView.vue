@@ -2,14 +2,17 @@
 import { mapState, mapStores, mapActions } from "pinia";
 import { useProductStore } from "@/stores/product";
 import { useCategoryStore } from "@/stores/category";
+import { RouterLink } from "vue-router";
 
 export default {
+  components:{RouterLink},
   data() {
     return {
       currentProduct: {
         id: "",
         name: "",
         categoryId: "",
+        image:"",
         category: {},
       },
       editing: false,
@@ -61,114 +64,46 @@ export default {
 };
 </script>
 <template>
-  <h3>Cadastro de Produtos</h3>
-  <div class="product-form">
-    <input type="text" v-model="currentProduct.name" />
-    <select v-model="currentProduct.categoryId">
-      <option
-        v-for="category in categories"
-        :value="category.id"
-        :key="category.id"
-      >
-        {{ category.description }}
-      </option>
-    </select>
-    <button @click="save">
-      {{ editing ? "Salvar" : "Adicionar" }}
-    </button>
+  <div class="top">
+    <h3>Livros Cadastrados</h3>
+    <q-btn to="/cadastroLivro" color="green" icon="add" label="Cadastrar Livro"/>
   </div>
-  <div class="product-list">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="text-left">
-            <span> <h6>ID</h6> </span>
-          </th>
-          <th class="text-left">
-            <span> <h6>Descrição</h6> </span>
-          </th>
-          <th class="text-left">
-            <span> <h6>Category</h6> </span>
-          </th>
-          <th class="text-left">
-            <span> <h6>Ações</h6> </span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="product of products" :key="product.id">
-          <td>{{ product.id }}</td>
-          <td>{{ product.name }}</td>
-          <td>{{ product.category.description }}</td>
-          <td>
-            <button @click="prepareToUpdate(product)">Update</button>
-            <button @click="deleteItem(product.id)">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+ <br>
+  <div class="main">
+    <q-card class="my-card justify" style="width: 30vw; height: 30vh; margin: 1%;" v-for="product of products" :key="product.id">
+          <q-card-section horizontal>
+            <q-img
+              class="col-5"
+              src="https://cdn.quasar.dev/img/parallax1.jpg"
+            />
+
+            <q-card-section>
+            
+            <tr> Nome: {{ product.name }}</tr>
+            <tr> Preço: {{ product.price }} </tr>
+            <tr>Categoria: {{ product.category.description }}</tr>
+            </q-card-section>
+          </q-card-section>
+
+          <q-separator />
+
+          <q-card-actions>
+            <q-btn to="/cadastroLivro" color="blue" icon="edit" label="Editar"></q-btn>
+            <q-btn  to="/cadastroLivro" color="red" icon="delete" label="Excluir"></q-btn>
+          </q-card-actions>
+    </q-card>
   </div>
 </template>
 
 <style scoped>
-.product-form input {
-  width: 40%;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid gray;
-  padding-left: 20px;
-  font-size: 1.2em;
+.main{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+.top{
+  display: flex;
+  justify-content: space-between  ;
 
-.product-form select {
-  width: 30%;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid gray;
-  padding-left: 20px;
-  font-size: 1.2em;
-  margin-left: 1%;
-}
-
-.product-form button {
-  height: 35px;
-  width: 20%;
-  margin-left: 2%;
-  background-color: rgb(63, 63, 125);
-  color: whitesmoke;
-  font-size: 1.2em;
-  border-radius: 20px;
-  border: 0;
-}
-
-.product-list,
-.product-form {
-  margin: 3% auto;
-  width: 70%;
-}
-table {
-  /* display: table; */
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray;
-  width: 100%;
-}
-
-th {
-  border-bottom: 2px solid #444;
-  text-align: left;
-}
-
-td {
-  padding: 10px;
-}
-
-thead tr {
-  background-color: #444;
-  color: whitesmoke;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #c3c3c3;
 }
 </style>

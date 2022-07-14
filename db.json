@@ -18,13 +18,43 @@
       "id": 1,
       "name": "Harry Potter e a Pedra Filosofal",
       "categoryId": 3,
-      "price": 150.00
+      "price": "R$ 150,00",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
     },
     {
       "id": 2,
       "name": "Novo Filme",
       "categoryId": 11,
-      "price": 150.00
+      "price": "R$ 150,00",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "teste Filme",
+      "categoryId": 11,
+      "price": "R$ 150,00",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "teste novo",
+      "categoryId": 11,
+      "price": "R$ 150,00",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "teste dos livros",
+      "categoryId": 11,
+      "price": "R$ 175,00",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "testando",
+      "categoryId": 11,
+      "price": "R$ 150,50",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
     }
   ],
   "authors": [
