@@ -18,11 +18,11 @@ export default {
       <tr>
         <th class="text-left" v-for="column of columns" :key="column.field">
           <span>
-            <h2>{{ column.label }}</h2>
+            <h6>{{ column.label }}</h6>
           </span>
         </th>
         <th class="text-left">
-          <span> <h2>Ações</h2> </span>
+          <span> <h6>Ações</h6> </span>
         </th>
       </tr>
     </thead>

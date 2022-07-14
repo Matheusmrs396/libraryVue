@@ -18,13 +18,13 @@
       "id": 1,
       "name": "Harry Potter e a Pedra Filosofal",
       "categoryId": 3,
-      "genreId": 1
+      "price": 150.00
     },
     {
       "id": 2,
       "name": "Novo Filme",
       "categoryId": 11,
-      "genreId": 1
+      "price": 150.00
     }
   ],
   "authors": [

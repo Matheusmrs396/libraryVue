@@ -22,7 +22,7 @@ export default {
 };
 </script>
 <template>
-  <h1>Cadastro de Editoras</h1>
+  <h3>Cadastro de Editoras</h3>
   <FormPublisher :currentPublisher="currentPublisher" />
   <ListPublisher @edit="prepareToUpdate" />
 </template>

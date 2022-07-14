@@ -61,7 +61,7 @@ export default {
 };
 </script>
 <template>
-  <h1>Cadastro de Produtos</h1>
+  <h3>Cadastro de Produtos</h3>
   <div class="product-form">
     <input type="text" v-model="currentProduct.name" />
     <select v-model="currentProduct.categoryId">
@@ -82,16 +82,16 @@ export default {
       <thead>
         <tr>
           <th class="text-left">
-            <span> <h2>ID</h2> </span>
+            <span> <h6>ID</h6> </span>
           </th>
           <th class="text-left">
-            <span> <h2>Descrição</h2> </span>
+            <span> <h6>Descrição</h6> </span>
           </th>
           <th class="text-left">
-            <span> <h2>Category</h2> </span>
+            <span> <h6>Category</h6> </span>
           </th>
           <th class="text-left">
-            <span> <h2>Ações</h2> </span>
+            <span> <h6>Ações</h6> </span>
           </th>
         </tr>
       </thead>
