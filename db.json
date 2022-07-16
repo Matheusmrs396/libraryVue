@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": 1,
-      "description": "Terror 222"
+      "description": "Terror 333"
     },
     {
       "id": 3,
@@ -16,10 +16,11 @@
   "products": [
     {
       "id": 1,
-      "name": "Harry Potter e a Pedra Filosofal",
-      "categoryId": 3,
+      "name": "Harry Potter e a Pedra Filosofal aaaa",
       "price": "R$ 150,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+      "categoryId": 3,
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg",
+      "description": "  x x c c "
     },
     {
       "id": 2,
@@ -71,7 +72,6 @@
       "id": 3
     }
   ],
-
   "publishers": [
     {
       "id": 1,
@@ -89,5 +89,4 @@
       "link": "https://www.editoraarqueiro.com.br/"
     }
   ]
-
 }

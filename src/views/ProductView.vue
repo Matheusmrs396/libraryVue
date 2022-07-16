@@ -24,34 +24,8 @@ export default {
     ...mapState(useCategoryStore, ["categories"]),
   },
   methods: {
-    ...mapActions(useProductStore, [
-      "getAllProducts",
-      "saveProduct",
-      "deleteProduct",
-    ]),
+    ...mapActions(useProductStore, ["getAllProducts"]),
     ...mapActions(useCategoryStore, ["getAllCategories"]),
-    async save() {
-      try {
-        const msg = await this.saveProduct(this.currentProduct);
-        alert(msg);
-        this.editing = false;
-        this.currentProduct = {};
-      } catch (e) {
-        alert("Ooops! Algo de errado!");
-      }
-    },
-    async deleteItem(product_id) {
-      try {
-        await this.deleteProduct(product_id);
-        alert("Item excluído com sucesso.");
-      } catch (e) {
-        alert(e);
-      }
-    },
-    prepareToUpdate(product) {
-      Object.assign(this.currentProduct, product);
-      this.editing = true;
-    },
   },
   async mounted() {
     try {
@@ -103,7 +77,7 @@ export default {
 }
 .top{
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
 
 }
 </style>
