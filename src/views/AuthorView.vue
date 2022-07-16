@@ -21,7 +21,9 @@ export default {
 };
 </script>
 <template>
-  <h3>Cadastro de Autores</h3>
+  <div class="title">
+    <h4>Cadastro de Autores</h4>
+  </div>
   <FormAuthor :currentAuthor="currentAuthor" />
   <ListAuthor @edit="prepareToUpdate" />
 </template>

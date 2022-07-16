@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
@@ -7,7 +7,6 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterLink to="/"> Home</RouterLink> |
     <RouterLink to="/categorias"> Categorias</RouterLink> |
     <RouterLink to="/produtos"> Livros</RouterLink> |
-    <RouterLink to="/login"> Login</RouterLink> |
     <RouterLink to="/autores"> Autor</RouterLink> |
     <RouterLink to="/editoras"> Editora</RouterLink>
   </header>
@@ -24,15 +23,23 @@ import { RouterLink, RouterView } from "vue-router";
 }
 
 header {
+  width: 100vw;
   height: 10%;
-  background-color: rgb(54, 54, 109);
+  background-color: black;
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 main {
-  padding: 10px;
+  padding: 0;
 }
+.title{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
 </style>

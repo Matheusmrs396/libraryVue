@@ -65,7 +65,7 @@ export default {
 </script>
 <template>
   <div class="top">
-    <h3>Livros Cadastrados</h3>
+    <h4>Livros Cadastrados</h4>
     <q-btn to="/cadastroLivro" color="green" icon="add" label="Cadastrar Livro"/>
   </div>
  <br>
@@ -102,6 +102,7 @@ export default {
   flex-wrap: wrap;
 }
 .top{
+  margin: 1%;
   display: flex;
   justify-content: space-between  ;
 

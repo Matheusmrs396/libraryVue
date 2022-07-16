@@ -21,7 +21,9 @@ export default {
 };
 </script>
 <template>
-  <h3>Cadastro de Categorias</h3>
+<div class="title">
+  <h4>Cadastro de Categorias</h4>
+</div> 
   <FormCategory :currentCategory="currentCategory" />
   <ListCategory @edit="prepareToUpdate" />
 </template>

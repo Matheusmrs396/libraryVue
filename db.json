@@ -11,23 +11,13 @@
     {
       "id": 11,
       "description": "Drama"
+    },
+    {
+      "id": 12,
+      "description": "ficação"
     }
   ],
   "products": [
-    {
-      "id": 1,
-      "name": "Harry Potter e a Pedra Filosofal",
-      "categoryId": 3,
-      "price": "R$ 150,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Novo Filme",
-      "categoryId": 11,
-      "price": "R$ 150,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
-    },
     {
       "id": 3,
       "name": "teste Filme",
@@ -55,12 +45,27 @@
       "categoryId": 11,
       "price": "R$ 150,50",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    },
+    {
+      "categoryId": 1,
+      "id": 7,
+      "name": "dvdsvsdvsdvsd",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg",
+      "price": "250,36"
+    },
+    {
+      "categoryId": 3,
+      "id": 8,
+      "name": "asbcajhcbajhc",
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg",
+      "price": 300.36,
+      "category": {}
     }
   ],
   "authors": [
     {
       "id": 1,
-      "name": "JK Rowlling"
+      "name": "JK Rowlling "
     },
     {
       "name": "Stephen King",
@@ -71,11 +76,10 @@
       "id": 3
     }
   ],
-
   "publishers": [
     {
       "id": 1,
-      "name": "Companhia das letras",
+      "name": "Companhia das letras 2",
       "link": "https://www.companhiadasletras.com.br/"
     },
     {
@@ -88,6 +92,13 @@
       "id": 3,
       "link": "https://www.editoraarqueiro.com.br/"
     }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "user adm",
+      "email": "adm@adm.com",
+      "password": "12345"
+    }
   ]
-
 }

@@ -35,6 +35,7 @@ export default {
 <template>
   <div class="publisher-form">
     <input type="text" v-model="publisher.name" />
+    <input type="text" v-model="publisher.link" />
     <button @click="save">
       {{ currentPublisher.id !== "" ? "Salvar" : "Adicionar" }}
     </button>
@@ -65,5 +66,7 @@ export default {
 .publisher-form {
   margin: 3% auto;
   width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 </style>

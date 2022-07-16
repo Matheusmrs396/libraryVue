@@ -9,10 +9,11 @@ export default {
   data() {
     return {
       currentProduct: {
+        categoryId: "",
         id: "",
         name: "",
-        categoryId: "",
         image:"",
+        price: "",
         category: {},
       },
       editing: false,
@@ -64,7 +65,9 @@ export default {
 };
 </script>
 <template>
-  <h4>Cadastro de Livros</h4>
+  <div class="title">
+    <h4>Cadastro de Livros</h4>
+  </div>
   <div class="product-form">
     <input type="text" v-model="currentProduct.name" />
     <select v-model="currentProduct.categoryId">
@@ -76,6 +79,8 @@ export default {
         {{ category.description }}
       </option>
     </select>
+    <input type="text" v-model="currentProduct.price" />
+    <input type="text" v-model="currentProduct.image" />
     <button @click="save">
       {{ editing ? "Salvar" : "Adicionar" }}
     </button>
@@ -91,7 +96,13 @@ export default {
             <span> <h5>Descrição</h5> </span>
           </th>
           <th class="text-left">
-            <span> <h5>Category</h5> </span>
+            <span> <h5>Categoria</h5> </span>
+          </th>
+          <th class="text-left">
+            <span> <h5>Preço</h5> </span>
+          </th>
+          <th class="text-left">
+            <span> <h5>Imagem</h5> </span>
           </th>
           <th class="text-left">
             <span> <h5>Ações</h5> </span>
@@ -147,6 +158,8 @@ export default {
 .product-form {
   margin: 3% auto;
   width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 table {
   /* display: table; */
