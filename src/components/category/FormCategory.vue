@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div class="category-form">
-    <input type="text" v-model="category.description" />
+    <q-input rounded outlined style="height:40px; width:40%" v-model="category.description" type="text" label="Categoria" />
     <button @click="save">
       {{ currentCategory.id !== "" ? "Salvar" : "Adicionar" }}
     </button>
@@ -62,6 +62,9 @@ export default {
 }
 
 .category-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3% auto;
   width: 70%;
 }

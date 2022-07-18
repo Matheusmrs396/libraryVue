@@ -40,8 +40,10 @@ export default {
           </span>
         </td>
         <td>
-          <button @click="$emit('edit', row)">Update</button>
-          <button @click="$emit('delete', row)">Delete</button>
+          <q-card-actions>
+            <q-btn  @click="$emit('edit', row)" color="blue" icon="edit" label="Editar"></q-btn>
+            <q-btn   @click="$emit('delete', row)" color="red" icon="delete" label="Excluir"></q-btn>
+          </q-card-actions>
         </td>
       </tr>
     </tbody>

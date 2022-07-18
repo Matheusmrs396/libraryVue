@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div class="author-form">
-    <input type="text" v-model="author.name" />
+    <q-input rounded outlined style="height:40px; width:40%" v-model="author.name" type="text" label="Nome do Autor" />
     <button @click="save">
       {{ currentAuthor.id !== "" ? "Salvar" : "Adicionar" }}
     </button>
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .author-form input {
-  width: 75%;
+  width: 40%;
   height: 40px;
   border-radius: 20px;
   border: 1px solid gray;
@@ -62,6 +62,9 @@ export default {
 }
 
 .author-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3% auto;
   width: 70%;
 }

@@ -34,8 +34,8 @@ export default {
 
 <template>
   <div class="publisher-form">
-    <input type="text" v-model="publisher.name" />
-    <input type="text" v-model="publisher.link" />
+    <q-input rounded outlined style="height:40px; width:40%; margin: 1%;" v-model="publisher.name" type="text" label="Nome da Editora" />
+    <q-input rounded outlined style="height:40px; width:40%" v-model="publisher.link" type="text" label="Link do Site" />
     <button @click="save">
       {{ currentPublisher.id !== "" ? "Salvar" : "Adicionar" }}
     </button>
@@ -64,9 +64,10 @@ export default {
 }
 
 .publisher-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3% auto;
   width: 70%;
-  display: flex;
-  justify-content: space-between;
 }
 </style>

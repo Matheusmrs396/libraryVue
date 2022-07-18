@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": 1,
-      "description": "Terror 222"
+      "description": "Terror"
     },
     {
       "id": 3,
@@ -22,33 +22,34 @@
       "id": 3,
       "name": "teste Filme",
       "categoryId": 11,
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg",
       "price": "R$ 150,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
-    },
-    {
-      "id": 4,
-      "name": "teste novo",
-      "categoryId": 11,
-      "price": "R$ 150,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
-    },
-    {
-      "id": 5,
-      "name": "teste dos livros",
-      "categoryId": 11,
-      "price": "R$ 175,00",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+      "publisherId": 1,
+      "authorId": 2,
+      "author": {
+        "id": 1,
+        "name": "JK Rowlling "
+      },
+      "publisher": {
+        "id": 1,
+        "name": "Companhia das letras 2",
+        "link": "https://www.companhiadasletras.com.br/"
+      }
     },
     {
       "id": 6,
       "name": "testando",
       "categoryId": 11,
+      "publisherId": 1,
+      "authorId": 1,
       "price": "R$ 150,50",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg"
     },
     {
       "categoryId": 1,
       "id": 7,
+      "publisherId": 1,
+      "authorId": 1,
       "name": "dvdsvsdvsdvsd",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg",
       "price": "250,36"
@@ -56,10 +57,22 @@
     {
       "categoryId": 3,
       "id": 8,
+      "publisherId": 1,
+      "authorId": 1,
       "name": "asbcajhcbajhc",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg",
       "price": 300.36,
       "category": {}
+    },
+    {
+      "categoryId": 1,
+      "id": 9,
+      "name": "dvsdvsdvsdv",
+      "image": "\thttps://cdn.quasar.dev/img/parallax1.jpg",
+      "price": "230,00",
+      "category": {},
+      "authorId": 3,
+      "publisherId": 2
     }
   ],
   "authors": [
@@ -91,14 +104,6 @@
       "name": "Editora Arqueiro",
       "id": 3,
       "link": "https://www.editoraarqueiro.com.br/"
-    }
-  ],
-  "user": [
-    {
-      "id": 1,
-      "name": "user adm",
-      "email": "adm@adm.com",
-      "password": "12345"
     }
   ]
 }

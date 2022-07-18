@@ -10,7 +10,7 @@ export const useProductStore = defineStore({
     async getAllProducts() {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/products?expand=category"
+          "http://localhost:4000/products?expand=category&expand=author&expand=publisher"
         );
         this.products = data;
         return Promise.resolve();

@@ -12,6 +12,9 @@ export default {
         id: "",
         name: "",
         categoryId: "",
+        publisherId: "",
+        authorId: "",
+        price:"",
         image:"",
         category: {},
       },
@@ -70,7 +73,7 @@ export default {
   </div>
  <br>
   <div class="main">
-    <q-card class="my-card justify" style="width: 30vw; height: 30vh; margin: 1%;" v-for="product of products" :key="product.id">
+    <q-card class="my-card justify" style="width: 30vw; height: 35vh; margin: 1%;" v-for="product of products" :key="product.id">
           <q-card-section horizontal>
             <q-img
               class="col-5"
@@ -78,18 +81,19 @@ export default {
             />
 
             <q-card-section>
-            
             <tr> Nome: {{ product.name }}</tr>
             <tr> Preço: {{ product.price }} </tr>
             <tr>Categoria: {{ product.category.description }}</tr>
+            <tr>Autor: {{ product.author.name }}</tr>
+            <tr>Editora: {{ product.publisher.name }}</tr>
             </q-card-section>
           </q-card-section>
 
           <q-separator />
 
           <q-card-actions>
-            <q-btn to="/cadastroLivro" color="blue" icon="edit" label="Editar"></q-btn>
-            <q-btn  to="/cadastroLivro" color="red" icon="delete" label="Excluir"></q-btn>
+            <q-btn to="/cadastroLivro" color="blue" icon="edit" label="Tela de edição"></q-btn>
+            <q-btn   @click="deleteItem(product.id)" color="red" icon="delete" label="Excluir"></q-btn>
           </q-card-actions>
     </q-card>
   </div>
@@ -98,13 +102,11 @@ export default {
 <style scoped>
 .main{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .top{
   margin: 1%;
   display: flex;
-  justify-content: space-between  ;
-
+  justify-content: space-between ;
 }
 </style>
