@@ -78,7 +78,7 @@ export default {
           <q-card-section horizontal>
             <q-img
               class="col-5"
-              src="https://cdn.quasar.dev/img/parallax1.jpg"
+              :src="product.image"
             />
 
             <q-card-section>

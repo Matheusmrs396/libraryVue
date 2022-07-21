@@ -24,9 +24,18 @@
       "categoryId": 11,
       "image": "https://cdn.quasar.dev/img/parallax1.jpg",
       "price": "R$ 150,00",
-      "publisherId": 1,
+      "amount": 20,
+      "publisherId": 2,
       "authorId": 2,
-      "amount": 20
+      "author": {
+        "name": "Stephen King",
+        "id": 2
+      },
+      "publisher": {
+        "id": 1,
+        "name": "Companhia das letras 2",
+        "link": "https://www.companhiadasletras.com.br/"
+      }
     },
     {
       "categoryId": 1,
