@@ -44,7 +44,7 @@ export const useProductStore = defineStore({
         );
         const index = this.products.findIndex((c) => c.id === product.id);
         this.products.splice(index, 1, product);
-        return Promise.resolve("Categoria alterada com sucesso!");
+        return Promise.resolve("Livro alterado com sucesso!");
       } catch (e) {
         console.error(e);
         return Promise.reject(e);
