@@ -16,6 +16,7 @@ export default {
         categoryId: "",
         image:"",
         price: "",
+        amount:"",
         category: {},
       },
       editing: false,
@@ -77,7 +78,7 @@ export default {
     <h4>Cadastro de Livros</h4>
   </div>
   <div class="product-form">
-    <input type="text" v-model="currentProduct.name" placeholder="Título do Livro" />
+    <input type="text" v-model="currentProduct.name" placeholder="Título" />
     <select  v-model="currentProduct.categoryId" required>
       <option
         v-for="category in categories"
@@ -106,6 +107,7 @@ export default {
       </option>
     </select>
     <input type="text" v-model="currentProduct.price" placeholder="Preço" />
+    <input type="text" v-model="currentProduct.amount" placeholder="Quantidade" />
     <input type="text" v-model="currentProduct.image" placeholder="Link Imagem" />
     <button @click="save">
       {{ editing ? "Salvar" : "Adicionar" }}

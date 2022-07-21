@@ -16,6 +16,7 @@ export default {
         authorId: "",
         price:"",
         image:"",
+        amount:"",
         category: {},
       },
       editing: false,
@@ -73,7 +74,7 @@ export default {
   </div>
  <br>
   <div class="main">
-    <q-card class="my-card justify" style="width: 30vw; height: 35vh; margin: 1%;" v-for="product of products" :key="product.id">
+    <q-card class="my-card justify" style="width: 30vw; height: 40vh; margin: 1%;" v-for="product of products" :key="product.id">
           <q-card-section horizontal>
             <q-img
               class="col-5"
@@ -86,6 +87,7 @@ export default {
             <tr>Categoria: {{ product.category.description }}</tr>
             <tr>Autor: {{ product.author.name }}</tr>
             <tr>Editora: {{ product.publisher.name }}</tr>
+            <tr> Quantidade: {{ product.amount }} </tr>
             </q-card-section>
           </q-card-section>
 

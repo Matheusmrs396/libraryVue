@@ -26,24 +26,7 @@
       "price": "R$ 150,00",
       "publisherId": 1,
       "authorId": 2,
-      "author": {
-        "id": 1,
-        "name": "JK Rowlling "
-      },
-      "publisher": {
-        "id": 1,
-        "name": "Companhia das letras 2",
-        "link": "https://www.companhiadasletras.com.br/"
-      }
-    },
-    {
-      "id": 6,
-      "name": "testando",
-      "categoryId": 11,
-      "publisherId": 1,
-      "authorId": 1,
-      "price": "R$ 150,50",
-      "image": "https://cdn.quasar.dev/img/parallax1.jpg"
+      "amount": 20
     },
     {
       "categoryId": 1,
@@ -52,7 +35,8 @@
       "authorId": 1,
       "name": "dvdsvsdvsdvsd",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg",
-      "price": "250,36"
+      "price": "250,36",
+      "amount": 10
     },
     {
       "categoryId": 3,
@@ -62,7 +46,7 @@
       "name": "asbcajhcbajhc",
       "image": "https://cdn.quasar.dev/img/parallax1.jpg",
       "price": 300.36,
-      "category": {}
+      "amount": 6
     },
     {
       "categoryId": 1,
@@ -72,7 +56,8 @@
       "price": "230,00",
       "category": {},
       "authorId": 3,
-      "publisherId": 2
+      "publisherId": 2,
+      "amount": 18
     }
   ],
   "authors": [
