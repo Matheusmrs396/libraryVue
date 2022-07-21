@@ -29,7 +29,7 @@ export const useProductStore = defineStore({
           product
         );
         this.products.push(data);
-        return Promise.resolve("Categoria adicionada com sucesso!");
+        return Promise.resolve("Livro adicionado com sucesso!");
       } catch (e) {
         console.error(e);
         return Promise.reject(e);

@@ -58,6 +58,17 @@
       "authorId": 3,
       "publisherId": 2,
       "amount": 18
+    },
+    {
+      "id": 10,
+      "name": "Harry Potter",
+      "categoryId": 12,
+      "image": "https://cdn.quasar.dev/img/parallax1.jpg",
+      "price": "200,00",
+      "amount": "200",
+      "category": {},
+      "authorId": 1,
+      "publisherId": 3
     }
   ],
   "authors": [
